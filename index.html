@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финальный Проект: Instrument & Control Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+        }
+        .task-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #10b981; /* Green-500 */
+        }
+        .resource-link {
+            display: block;
+            background-color: #ecfdf5; /* Green-50 */
+            color: #047857; /* Green-700 */
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-weight: 500;
+            text-align: center;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .resource-link:hover {
+            background-color: #d1fae5; /* Green-100 */
+            transform: translateY(-2px);
+        }
+        .pid-container img {
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Итоговый Проект</h1>
+            <p class="text-xl text-gray-600 mt-2">Разработка проектных документов для нового обьекта</p>
+        </header>
+
+        <div class="task-card">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Описание Задания</h2>
+            <p class="text-gray-600">
+                Добро пожаловать на финальное задание курса! Ваша задача — выступить в роли инженера КИПиА и разработать базовый пакет проектной документации для тех. процесса, представленного на схеме P&ID ниже. Вы должны продемонстрировать умение читать схемы, извлекать необходимую информацию и оформлять ее в виде стандартных отраслевых документов.
+            </p>
+        </div>
+
+        <div class="task-card">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Технологическая Схема (P&ID)</h2>
+            <p class="text-gray-600 mb-4">Внимательно изучите данную схему. Она является вашим основным источником информации для выполнения задания. Все приборы, которые необходимо задокументировать, находятся на этой P&ID.</p>
+            <div class="pid-container">
+                <!-- 
+                    ВАЖНО: Ссылка на изображение ниже - это временная заглушка.
+                    Чтобы отобразить вашу схему P&ID:
+                    1. Сделайте скриншот вашего P&ID и сохраните как файл (например, pid-image.png).
+                    2. Загрузите этот файл в ваш репозиторий на GitHub.
+                    3. Замените ссылку в атрибуте 'src' ниже на имя вашего файла (например, src="pid-image.png").
+                -->
+                <img src="https://placehold.co/1200x800/e2e8f0/4a5568?text=Your+P%26ID+Image+Here" alt="P&ID Схема узла водно-гликолевого раствора" class="w-full">
+                <a href="https://drive.google.com/file/d/1F2tAERBaKeDmr5RKoCrXUyPKroNbXclx/view?usp=sharing" target="_blank" class="text-sm text-blue-600 hover:underline mt-2 inline-block">Скачать PDF-версию P&ID</a>
+
+            </div>
+        </div>
+
+        <div class="task-card">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">План Работы</h2>
+            <ol class="list-decimal list-inside text-gray-600 space-y-3">
+                <li>
+                    <strong>Анализ P&ID:</strong> Идентифицируйте все контрольно-измерительные приборы и клапаны, представленные на схеме.
+                </li>
+                <li>
+                    <strong>Разработка I/O List:</strong> Составьте полный перечень входов/выходов для всех приборов, которые подключаются к системе управления. Используйте предоставленный шаблон.
+                </li>
+                <li>
+                    <strong>Разработка Datasheets:</strong> Заполните технические паспорта (datasheets) для следующих всех приборов
+                    <ul class="list-disc list-inside ml-4 mt-2">
+                        <li>Датчики уровня </li>
+                        <li>Датчики давления </li>
+                        <li>Регулирующий клапан </li>
+                        <li>Датчики температуры </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Разработка Cable Schedule:</strong> Создайте кабельный журнал. Представьте, что все приборы со схемы подключаются к одной воображаемой клеммной коробке <strong>JB-9200</strong>.
+                </li>
+                <li>
+                    <strong>Прохождение Финального Квиза:</strong> После завершения работы над документацией, пройдите итоговый тест для проверки теоретических знаний по всему курсу.
+                </li>
+            </ol>
+        </div>
+
+        <div class="task-card">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Ресурсы и Шаблоны</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="https://aibolatkonysbayev.github.io/IO-list-template/" target="_blank" class="resource-link">Шаблон: I/O List</a>
+                <a href="https://aibolatkonysbayev.github.io/Datasheet-template/" target="_blank" class="resource-link">Шаблон: Datasheet</a>
+                <a href="https://aibolatkonysbayev.github.io/Cable-schedule/" target="_blank" class="resource-link">Шаблон: Cable Schedule</a>
+                <a href="https://aibolatkonysbayev.github.io/final-exam-/" target="_blank" class="resource-link font-bold border-2 border-green-600">Финальный Квиз</a>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Рекомендации по сдаче работы</h2>
+            <p class="text-gray-600">
+                Подготовьте пакет документов (I/O List, Datasheets, Cable Schedule), экспортировав их в формате CSV или PDF. Соберите все файлы в одну папку с вашим именем и отправьте на проверку. Удачи!
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
